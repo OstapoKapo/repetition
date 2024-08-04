@@ -1,0 +1,30 @@
+@mixin block($height) {
+    width: 100%;
+    height: $height;
+    display: flex;
+    justify-content: center;
+    &__container{
+        width: 1250px;
+        height: 100%;
+        display: flex;
+        padding: 0 10px;
+    }
+}
+
+@mixin center{
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin row{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+}
+
+@mixin text($color, $size, $weight){
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}
